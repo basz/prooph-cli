@@ -14,9 +14,6 @@ use Prooph\Cli\Code\Generator;
 use Prooph\Cli\Console\Command;
 
 return [
-    'services' => [
-        'config' => require __DIR__ . '/config.php',
-    ],
     'factories' => [
         // generators
         Generator\Aggregate::class => InvokableFactory::class,
